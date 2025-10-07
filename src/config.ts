@@ -9,7 +9,7 @@ export const config = {
     masjidFund: { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" }
   },
   quickPay: {
-    link: "https://rzp.io/l/masjid-ul-huda-quickpay" // General masjid payment page URL
+    link: "https://rzp.io/rzp/qdVdj6G" // Zakat payment page URL
   },
   settings: {
     fidyahRate: 120, // INR per day (editable)
