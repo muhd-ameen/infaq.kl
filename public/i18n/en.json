@@ -1,0 +1,156 @@
+{
+  "header": {
+    "brand": "Infaq",
+    "masjid": "Masjid Ul Huda"
+  },
+  "brand": {
+    "name": "Infaq",
+    "masjid": "Masjid Ul Huda",
+    "tagline": "Give for the sake of Allah — Quickly, Securely, Transparently."
+  },
+  "welcome": {
+    "title": "Welcome to Infaq",
+    "subtitle": "Choose your preferred language to continue",
+    "footer": "Secure donations powered by Razorpay"
+  },
+  "nav": {
+    "language": "EN"
+  },
+  "home": {
+    "title": "Choose Donation Type",
+    "subtitle": "Select the type of donation you wish to make",
+    "learn_more": "Learn more about these donations"
+  },
+  "quickpay": {
+    "title": "Pay Instantly",
+    "sub": "General donation to Masjid Ul Huda",
+    "btn": "Pay Instantly",
+    "note": "Fast UPI payment — enter any amount on the next screen"
+  },
+  "donation": {
+    "zakat": {
+      "title": "Zakat",
+      "description": "Annual obligatory charity",
+      "what_is": "What is Zakat?"
+    },
+    "fidyah": {
+      "title": "Fidyah",
+      "description": "Compensation for missed fasts",
+      "what_is": "What is Fidyah?"
+    },
+    "kaffarah": {
+      "title": "Kaffarah",
+      "description": "Expiation for broken fasts",
+      "what_is": "What is Kaffarah?"
+    },
+    "sadaqah": {
+      "title": "Sadaqah",
+      "description": "Voluntary charity",
+      "what_is": "What is Sadaqah?"
+    },
+    "masjid_fund": {
+      "title": "Masjid Fund",
+      "description": "Support masjid operations",
+      "what_is": "What is Masjid Fund?"
+    }
+  },
+  "give": {
+    "title": "Make a Donation",
+    "subtitle": "Enter the amount you wish to donate",
+    "amount_label": "Amount (₹)",
+    "amount_note": "Minimum amount: ₹1",
+    "quick_amounts": "Quick amounts",
+    "anonymous_title": "Anonymous Donation",
+    "anonymous_description": "Your name will not be displayed publicly",
+    "donate_button": "Continue to Razorpay",
+    "security_note": "Secure payment powered by Razorpay",
+    "fidyah_days_label": "Number of days",
+    "fidyah_days_placeholder": "Enter days",
+    "fidyah_calculated": "Calculated amount: ₹{amount}",
+    "mobile_label": "Mobile Number (Optional)",
+    "mobile_placeholder": "Enter your mobile number",
+    "mobile_note": "For receipt and updates",
+    "error_amount_required": "Please enter a valid amount",
+    "error_amount_minimum": "Minimum amount is ₹1",
+    "error_days_required": "Please enter number of days",
+    "error_days_minimum": "Minimum 1 day required"
+  },
+  "cta": {
+    "continue": "Continue to Razorpay"
+  },
+  "label": {
+    "amount": "Amount (₹)",
+    "presets": "Quick amounts",
+    "days": "Days missed",
+    "total": "Total",
+    "mobile": "Mobile number",
+    "anon": "Give anonymously"
+  },
+  "hint": {
+    "variable": "You can enter the exact amount on the next screen."
+  },
+  "error": {
+    "amount": "Please enter a valid amount.",
+    "mobile": "Enter a valid 10-digit mobile number."
+  },
+  "info": {
+    "title": "About Islamic Donations",
+    "subtitle": "Learn about different types of Islamic charitable giving",
+    "zakat": {
+      "title": "What is Zakat?",
+      "body": "Zakat is obligatory charity on eligible savings/assets at 2.5%, given to eligible recipients.",
+      "description": "Zakat is one of the Five Pillars of Islam and is an obligatory form of charity. It requires Muslims to donate 2.5% of their wealth annually to help those in need. It purifies wealth and ensures social justice.",
+      "rate": "Rate: 2.5% of annual wealth"
+    },
+    "fidyah": {
+      "title": "What is Fidyah?",
+      "body": "Fidyah is paid for each fast missed when one cannot fast and cannot make up later. Your masjid sets the per-day rate.",
+      "description": "Fidyah is compensation paid by those who cannot fast during Ramadan due to illness, pregnancy, or old age. It involves feeding one poor person for each day of missed fasting.",
+      "rate": "Rate: Cost of one meal per missed day"
+    },
+    "kaffarah": {
+      "title": "What is Kaffarah?",
+      "body": "Kaffarah is compensation for certain violations like intentionally breaking a fast or oaths. Follow local masjid guidance.",
+      "description": "Kaffarah is expiation for intentionally breaking a fast during Ramadan without a valid reason. It requires either fasting for 60 consecutive days or feeding 60 poor people.",
+      "rate": "Rate: 60 days fasting or feeding 60 people"
+    },
+    "sadaqah": {
+      "title": "What is Sadaqah?",
+      "body": "Sadaqah is voluntary charity of any amount at any time.",
+      "description": "Sadaqah is voluntary charity given out of love for Allah and compassion for others. It can be given at any time and in any amount. Sadaqah purifies wealth, increases blessings, and helps those in need.",
+      "rate": "Rate: Any amount you wish to give"
+    },
+    "masjid": {
+      "title": "What is the Masjid Fund?",
+      "body": "Supports utilities, maintenance, education, and construction for Masjid Ul Huda.",
+      "description": "Masjid Fund donations support the daily operations, maintenance, utilities, community programs, and other essential activities of the masjid. These contributions help maintain the house of Allah and serve the community.",
+      "rate": "Rate: Any amount you wish to give"
+    },
+    "masjid_fund": {
+      "title": "Masjid Fund",
+      "description": "Masjid Fund donations support the daily operations, maintenance, utilities, community programs, and other essential activities of the masjid. These contributions help maintain the house of Allah and serve the community.",
+      "rate": "Rate: Any amount you wish to give"
+    },
+    "back_to_donate": "Make a Donation"
+  },
+  "success": {
+    "title": "Alhamdulillah, your contribution was received.",
+    "sub": "Razorpay will send you the official receipt.",
+    "subtitle": "Your donation has been received successfully",
+    "donation_details": "Donation Details",
+    "type": "Type:",
+    "amount": "Amount:",
+    "status": "Status:",
+    "completed": "Completed",
+    "anonymous": "Anonymous:",
+    "gratitude_title": "May Allah bless you",
+    "gratitude_message": "Your generous donation will help support our community and masjid operations. May Allah accept your charity and multiply your rewards.",
+    "make_another": "Make Another Donation",
+    "back_to_home": "Back to Home",
+    "share_title": "Share this with others",
+    "footer": "Thank you for supporting our community",
+    "join_whatsapp": "Join Masjid WhatsApp",
+    "join": "Join Masjid WhatsApp",
+    "join_whatsapp_description": "Stay connected with our community"
+  }
+}

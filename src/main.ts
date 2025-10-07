@@ -59,8 +59,12 @@ async function initializeApp() {
 
 async function loadTranslations() {
   try {
-    const enResponse = await fetch('/src/i18n/en.json');
-    const mlResponse = await fetch('/src/i18n/ml.json');
+    const enResponse = await fetch('/i18n/en.json');
+    const mlResponse = await fetch('/i18n/ml.json');
+    
+    if (!enResponse.ok || !mlResponse.ok) {
+      throw new Error(`Failed to fetch translations: ${enResponse.status} ${mlResponse.status}`);
+    }
     
     const enTranslations = await enResponse.json();
     const mlTranslations = await mlResponse.json();
