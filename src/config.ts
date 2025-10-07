@@ -8,6 +8,9 @@ export const config = {
     sadaqah:    { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" },
     masjidFund: { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" }
   },
+  quickPay: {
+    link: "https://rzp.io/l/masjid-ul-huda-quickpay" // General masjid payment page URL
+  },
   settings: {
     fidyahRate: 120, // INR per day (editable)
     whatsappLink: "https://chat.whatsapp.com/PASTE_LINK"

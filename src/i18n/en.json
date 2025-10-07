@@ -21,6 +21,12 @@
     "subtitle": "Select the type of donation you wish to make",
     "learn_more": "Learn more about these donations"
   },
+  "quickpay": {
+    "title": "Pay Instantly",
+    "sub": "General donation to Masjid Ul Huda",
+    "btn": "Pay Instantly",
+    "note": "Fast UPI payment — enter any amount on the next screen"
+  },
   "donation": {
     "zakat": {
       "title": "Zakat",

@@ -239,6 +239,9 @@ function handlePageInitialization() {
   injectIcons();
   
   switch (currentPage) {
+    case 'home':
+      initQuickPay();
+      break;
     case 'give':
       initializeGivePage();
       break;
@@ -431,6 +434,7 @@ declare global {
   function joinWhatsApp(): void;
   function shareWhatsApp(): void;
   function shareTelegram(): void;
+  function initQuickPay(): void;
 }
 
 // Language selection
@@ -531,6 +535,17 @@ window.shareTelegram = function() {
   const text = encodeURIComponent('Check out this masjid donation app! Make your charitable contributions easily.');
   const url = encodeURIComponent(window.location.origin);
   window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+};
+
+// Quick Pay functionality
+window.initQuickPay = function() {
+  const btn = document.getElementById('quickPayBtn');
+  if (!btn) return;
+  
+  btn.addEventListener('click', () => {
+    sessionStorage.setItem('category', 'masjidFund'); // for success screen context
+    window.location.href = config.quickPay.link;
+  });
 };
 
 // Load saved language on page load
