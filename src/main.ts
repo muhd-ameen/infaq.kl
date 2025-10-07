@@ -1,3 +1,6 @@
+// Import Tailwind CSS
+import '/styles/tailwind.css';
+
 // Import config and icons
 import { getRazorpayUrl, calculateFidyahAmount, config } from './config.js';
 import { injectIcons } from './icons/index.js';

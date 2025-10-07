@@ -2,11 +2,11 @@
 
 export const config = {
   paymentPages: {
-    zakat:      { public: "https://rzp.io/l/PASTE_ZAKAT_PUBLIC",      anonymous: "https://rzp.io/l/PASTE_ZAKAT_ANON" },
-    fidyah:     { public: "https://rzp.io/l/PASTE_FIDYAH_PUBLIC",     anonymous: "https://rzp.io/l/PASTE_FIDYAH_ANON" },
-    kaffarah:   { public: "https://rzp.io/l/PASTE_KAFFARAH_PUBLIC",   anonymous: "https://rzp.io/l/PASTE_KAFFARAH_ANON" },
-    sadaqah:    { public: "https://rzp.io/l/PASTE_SADAQAH_PUBLIC",    anonymous: "https://rzp.io/l/PASTE_SADAQAH_ANON" },
-    masjidFund: { public: "https://rzp.io/l/PASTE_MASJID_PUBLIC",     anonymous: "https://rzp.io/l/PASTE_MASJID_ANON" }
+    zakat:      { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" },
+    fidyah:     { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" },
+    kaffarah:   { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" },
+    sadaqah:    { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" },
+    masjidFund: { public: "https://rzp.io/rzp/qdVdj6G",      anonymous: "https://rzp.io/rzp/qdVdj6G" }
   },
   settings: {
     fidyahRate: 120, // INR per day (editable)

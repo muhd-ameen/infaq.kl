@@ -1,14 +1,16 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: false,
-    minify: 'esbuild',
     rollupOptions: {
-      output: {
-        manualChunks: undefined
+      input: {
+        index: resolve(__dirname, 'index.html'),
+        home: resolve(__dirname, 'home.html'),
+        give: resolve(__dirname, 'give.html'),
+        info: resolve(__dirname, 'info.html'),
+        success: resolve(__dirname, 'success.html'),
+        scan: resolve(__dirname, 'scan.html'),
       }
     }
   },
