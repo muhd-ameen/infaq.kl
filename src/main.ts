@@ -479,6 +479,24 @@ window.switchLanguage = function() {
   state.currentLanguage = newLanguage;
   sessionStorage.setItem('lang', newLanguage);
   applyLanguage(newLanguage);
+  
+  // Re-initialize page-specific content after language switch
+  const currentPage = getCurrentPage();
+  if (currentPage === 'info') {
+    // Re-load info content with new language
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('c') || urlParams.get('category') || sessionStorage.getItem('donationType');
+    if (category) {
+      loadInfoContent(category);
+    }
+  } else if (currentPage === 'give') {
+    // Re-update donation type display with new language
+    const urlParams = new URLSearchParams(window.location.search);
+    const donationType = urlParams.get('type') || sessionStorage.getItem('donationType');
+    if (donationType) {
+      updateDonationTypeDisplay(donationType);
+    }
+  }
 };
 
 // Navigation functions

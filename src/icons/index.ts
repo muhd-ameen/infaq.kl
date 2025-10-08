@@ -21,6 +21,10 @@ export const IconSadaqah = `<svg width="24" height="24" viewBox="0 0 24 24" fill
   <path d="M12 5l3 3-3 3-3-3z"/>
 </svg>`;
 
+export const IconInterest = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.5 0L4.268 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+</svg>`;
+
 export const IconMasjid = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M3 21h18"/>
   <path d="M5 21V7l8-4v18"/>
@@ -37,6 +41,7 @@ export const iconMap = {
   fidyah: IconFidyah,
   kaffarah: IconKaffarah,
   sadaqah: IconSadaqah,
+  interest: IconInterest,
   masjid: IconMasjid,
   masjid_fund: IconMasjid
 } as const;
