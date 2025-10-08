@@ -328,6 +328,12 @@ function updateDonationTypeDisplay(type: string) {
       </svg>`,
       bgColor: 'bg-purple-600'
     },
+    interest: {
+      icon: `<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.5 0L4.268 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+      </svg>`,
+      bgColor: 'bg-red-600'
+    },
     masjid_fund: {
       icon: `<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
@@ -363,8 +369,23 @@ function loadInfoContent(category: string) {
   
   if (!iconElement || !titleElement || !contentElement) return;
   
-  const categoryData = translations[state.currentLanguage]?.info?.[category];
-  if (!categoryData) return;
+  // Map category parameter to the correct i18n key
+  const categoryMapping: Record<string, string> = {
+    'zakat': 'zakat',
+    'fidyah': 'fidyah', 
+    'kaffarah': 'kaffarah',
+    'sadaqah': 'sadaqah',
+    'interest': 'interest',
+    'masjid': 'masjid',  // This maps to the 'masjid' key in i18n
+    'masjid_fund': 'masjid_fund'
+  };
+  
+  const mappedCategory = categoryMapping[category] || category;
+  const categoryData = translations[state.currentLanguage]?.info?.[mappedCategory];
+  if (!categoryData) {
+    console.error(`No translation data found for category: ${category} (mapped to: ${mappedCategory})`);
+    return;
+  }
   
   // Update icon based on category
   const iconConfig = {
@@ -372,10 +393,12 @@ function loadInfoContent(category: string) {
     fidyah: { bg: 'bg-green-600', icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z' },
     kaffarah: { bg: 'bg-gold-600', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
     sadaqah: { bg: 'bg-purple-600', icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z' },
+    interest: { bg: 'bg-red-600', icon: 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.5 0L4.268 16.5c-.77.833.192 2.5 1.732 2.5z' },
+    masjid: { bg: 'bg-blue-600', icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' },
     masjid_fund: { bg: 'bg-blue-600', icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' }
   };
   
-  const config = iconConfig[category as keyof typeof iconConfig];
+  const config = iconConfig[mappedCategory as keyof typeof iconConfig];
   if (config) {
     iconElement.className = `w-16 h-16 ${config.bg} rounded-full mx-auto mb-4 flex items-center justify-center`;
     iconElement.innerHTML = `<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${config.icon}"></path></svg>`;

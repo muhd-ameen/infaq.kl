@@ -48,6 +48,11 @@
       "description": "Voluntary charity",
       "what_is": "What is Sadaqah?"
     },
+    "interest": {
+      "title": "Interest Amount",
+      "description": "Donate bank interest to charity",
+      "what_is": "What is Interest Amount?"
+    },
     "masjid_fund": {
       "title": "Masjid Fund",
       "description": "Support masjid operations",
@@ -125,6 +130,12 @@
       "body": "Supports utilities, maintenance, education, and construction for Masjid Ul Huda.",
       "description": "Masjid Fund donations support the daily operations, maintenance, utilities, community programs, and other essential activities of the masjid. These contributions help maintain the house of Allah and serve the community.",
       "rate": "Rate: Any amount you wish to give"
+    },
+    "interest": {
+      "title": "What is Interest Amount?",
+      "body": "Donate bank interest earned on savings to charity as it's considered haram (forbidden) in Islam.",
+      "description": "In Islam, earning interest (riba) is forbidden. Muslims who have earned interest from bank accounts, investments, or loans should donate this amount to charity to purify their wealth. This helps cleanse the money and redirect it to beneficial causes.",
+      "rate": "Rate: Any interest amount you have earned"
     },
     "masjid_fund": {
       "title": "Masjid Fund",
